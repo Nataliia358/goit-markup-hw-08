@@ -1,0 +1,43 @@
+.site-nav {
+    display: flex;
+    margin-left: 85px;
+    cursor: pointer;
+}
+
+.site-nav .items {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.site-nav .link {
+    @extend .font;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    text-decoration: none;
+    color: $title-text-color;
+
+    &:hover{
+        color: $accent-color;
+    }
+}
+
+.site-nav .link.current {
+    color: $accent-color;
+    position: relative;
+}
+
+.site-nav .link.current::before,
+.site-nav .link.current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $accent-color;
+    transform: translate();
+}

@@ -1,0 +1,81 @@
+.background-team {
+    background-color: #E5E5E5;
+}
+
+.team-list {
+    display: flex;
+}
+
+.card {
+    padding-bottom: 24px;
+    background-color: $secondary-text-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+     0px 1px 1px rgba(0, 0, 0, 0.14), 
+     0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.team-list .card { 
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;  
+    text-align: center;
+}
+
+.speciality {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.container-network {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.social {
+    display: flex;
+}
+
+.social .item {
+    &:not(:last-child) {
+    margin-right: 10px;
+    }
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8 ;
+
+    transition: fill $timing-animation;
+    background-color: $timing-animation;
+}
+
+
+.team-social {
+    &:hover, &:focus {
+    background-color: $accent-color;
+    fill: $secondary-text-color;
+    }
+}

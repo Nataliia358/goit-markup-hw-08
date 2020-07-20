@@ -1,0 +1,46 @@
+.site-contact {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-left: auto;
+}
+
+.site-contact .point {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.site-contact .item {
+    &+.item {
+        margin-left: 30px;
+    }
+}
+
+.site-contact .link {
+    @extend .font;
+    display: block;
+    color: $primary-text-color;
+    text-decoration: none;
+    fill: $primary-text-color;
+
+    transition: fill $timing-animation,
+    color $timing-animation;
+
+    &:hover, &:focus {
+        fill: $accent-color;
+        color: $accent-color;
+    }
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 11.2px;
+    margin-right: 10px;
+}
+
+.icon-smartphone {
+    height: 10px;
+    width: 14.94px;
+    margin-right: 10px;
+}

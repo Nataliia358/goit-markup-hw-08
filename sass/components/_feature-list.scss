@@ -1,0 +1,47 @@
+.feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    letter-spacing: 0.03em;     
+
+    color: $title-text-color;
+}
+
+.feature-list {
+    display: flex;
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E5E5E5;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+}
+
+.feature-list .item {
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+    width: 70px;
+    height: 70px;
+}
+
+.title-definition {
+    text-align: left;
+}

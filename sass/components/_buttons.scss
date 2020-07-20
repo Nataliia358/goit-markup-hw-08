@@ -1,0 +1,60 @@
+.button {
+    cursor: pointer;
+    border:none;
+    min-width: 200px;
+    min-height: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: $secondary-text-color ;
+    background-color: $accent-color ;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $secondary-text-color;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-send {
+    cursor: pointer;
+    border:none;
+    outline: transparent;
+    padding: 0px 30px;
+    min-width: 200px;
+    min-height: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: $secondary-text-color ;
+    background-color: $accent-color ;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform $timing-animation;
+}
+

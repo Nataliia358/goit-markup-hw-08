@@ -1,0 +1,21 @@
+.location {
+    color: $secondary-text-color;
+}
+
+.location-list .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.location,
+.location-list .link {
+    font-size: 14px;
+    line-height: 1.71;
+}
+.location-item .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.location-list {
+    font-style: normal;
+}

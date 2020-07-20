@@ -1,0 +1,67 @@
+.container-port {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-family: inherit;
+    list-style: none;
+}
+
+.button-portfolio {
+    display: inline-block;
+    border-radius: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    outline: none;
+    min-width: 73px;
+    text-align: center;
+    transition: background-color $timing-animation,
+    color $timing-animation;
+
+    color: $title-text-color ;
+    background-color: #f5f4fa ;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-decoration: none
+}
+
+.button-portfolio {
+    &:hover, &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    }
+}
+
+.button-list .item {
+    &:not(:last-child) {
+    margin-right: 8px;
+    }
+}
+
+.section-title .text {
+    font-size: 18px;
+    line-height: 1.56;
+}
+

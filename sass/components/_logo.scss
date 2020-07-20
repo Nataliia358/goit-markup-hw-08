@@ -1,0 +1,31 @@
+.logo {
+    font-family: $font-family-logo;
+    font-size: 22px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    padding-bottom: 0;
+    width: 153px;
+}
+
+div {
+    display: block;
+}
+
+.web {
+    color: $accent-color;
+    text-decoration: none;
+}
+
+.studio {
+    $color: #000000;
+    color: $color;
+    text-decoration: none;
+}
+
+.studiof {
+    color: $secondary-text-color;
+    text-decoration: none;
+}

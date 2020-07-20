@@ -1,0 +1,53 @@
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $secondary-text-color;
+    border-radius: 4px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    text-align: center;
+
+    transition: transform $timing-animation;
+}
+
+.modal .button {
+   @extend .close-modal;
+}
+
+.icon-close {
+    width: 11px;
+    height: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    fill: $modal-icon;
+    transition: $timing-animation;
+
+    .close-modal:focus-within &,
+    .close-modal:hover & {
+        fill: $accent-color;
+    }
+}
+
+.modal b {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    cursor: default;
+}

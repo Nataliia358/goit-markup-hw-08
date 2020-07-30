@@ -14,13 +14,17 @@
     border-radius: 4px;
     transition: border $timing-animation;
     outline: none;
+
+    &:focus-within {
+        border-color: $accent-color;
+        }
 }
 
-.form-field {
+/*
+.form-field
     &:focus-within {
     border-color: $accent-color;
     }
-}
 
 /*
 .form-label:focus-within > .input-icon {
@@ -47,12 +51,10 @@
     top $timing-animation, left $timing-animation,
     color $timing-animation;
 
-    .form-label {
-        :focus-within & {
+    .form-label:focus-within & {
             color: $accent-color;
             transform: translateY(-40px) translateX(-30px);
         }
-    }
 }
 
 .input-icon {
@@ -66,12 +68,10 @@
     fill: $title-text-color;
     transition: fill $timing-animation;
 
-    .form-label {
-        :focus-within & {
+    .form-label:focus-within > & {
             fill: $accent-color;
             transform: translateY(-40px) translateX(-30px);
         }
-    }
 }
 
 .comment-label {    
@@ -115,12 +115,10 @@
     top $timing-animation, left $timing-animation,
     color $timing-animation;
 
-    .comment-label {
-        :focus-within & {
+    .comment-label:focus-within > & {
             transform: translateY(-30px);
             color: $accent-color;
         }
-    }
 }
 
 .checkbox-label {

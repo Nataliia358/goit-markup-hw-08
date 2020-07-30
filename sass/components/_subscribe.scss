@@ -1,9 +1,20 @@
 .sign-container {
     padding-top: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: 100%;
+        margin-top: 60px;
+        margin-bottom: 0; 
+    }
 }
 
 .email-forma {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 
 .subscribe-input:focus-within {
@@ -11,7 +22,28 @@
 }
 
 .subscribe-input {
-    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
+
+    /*width: 358px;
     height: 50px;
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -19,16 +51,16 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
-    outline: none;
+    outline: none;*/
 }
 
 .email-send {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    padding: 10px 29px;
+    min-width: 200px;
     height: 50px;
-    padding: 20px 30px;
 
     background-color: $accent-color;
     color: $secondary-text-color;

@@ -1,13 +1,19 @@
 .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
     font-family: $font-family-logo;
-    font-size: 22px;
+    transform: scale(1);
+    transition: transform $timing-animation;
+    
+
+    /*
     margin-right: 0px;
     margin-bottom: 8px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    padding-bottom: 0;
-    width: 153px;
+    padding-bottom: 0;*/
 }
 
 div {

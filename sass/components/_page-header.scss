@@ -1,5 +1,18 @@
-.main-nav {
+/*.main-nav {
     display: flex;
     text-align: center;
+}*/
+
+header {
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}

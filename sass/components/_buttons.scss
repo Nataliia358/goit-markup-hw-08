@@ -11,7 +11,7 @@
     background-color: $accent-color ;
     font-family: inherit;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
@@ -32,6 +32,32 @@
     background-color: $secondary-text-color;
     cursor: pointer;
     outline: none;
+}
+
+.button-hero {
+    cursor: pointer;
+    border:none;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 32px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: $secondary-text-color ;
+    background-color: $accent-color ;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.87%;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transform: scale(1);
+    transition: transform $timing-animation;
+    
 }
 
 .modal-send {
@@ -57,4 +83,3 @@
     transform: scale(1);
     transition: transform $timing-animation;
 }
-

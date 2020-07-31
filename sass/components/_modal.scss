@@ -1,6 +1,25 @@
-.modal {
 
-    @media screen and (min-width: 480px) {
+.modal {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    background-color: $secondary-text-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    opacity: 1;
+    transform: translate(-50%, -5%) scale(1);
+
+    transition: transform $timing-animation;
+
+
+   /* @media screen and (min-width: 480px) {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -24,33 +43,9 @@
     }*/
 
     @media screen and (min-width: 1200px) {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-        width: 100%;
-        max-width: 528px;
-        height: 581px;
+        width: 530px;
+        height: 580px;
     }
-
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-
-    min-width: 528px;
-    min-height: 581px;*/
-    background-color: $secondary-text-color;
-    border-radius: 4px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
-    0px 1px 1px rgba(0, 0, 0, 0.14), 
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-    text-align: center;
-
-    transition: transform $timing-animation;
 }
 
 .modal .button {
@@ -78,7 +73,7 @@
     display: inline-block;
     margin-bottom: 30px;
     font-family: $font-family;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;

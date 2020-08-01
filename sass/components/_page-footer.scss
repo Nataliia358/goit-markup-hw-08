@@ -1,8 +1,4 @@
 .footer {
-    background-color: #2F303A;
-    color: $secondary-text-color;
-    font-size: 14px;
-    line-height: 1.14;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -18,22 +14,31 @@
     }
 }
 
+.footer {
+    background-color: #2F303A;
+    color: $secondary-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
 .content-footer {
     padding: 60px 15px;
     text-align: center;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        justify-content: center;
-        align-items: flex-start;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: space-between;
-        text-align: start;
-    }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+        }
 
     /*display: flex;
     align-items: baseline;
@@ -49,9 +54,9 @@
 .footer-address {
     font-style: normal;
     margin-top: 20px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: block;
-    }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: block;
+        }
 }
 
 .container-port {
@@ -66,5 +71,18 @@
 
 .address-list {
     display: block;
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+        flex-basis: 50%;
+    }
 }
 
+.footer-address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer-address {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+        display: block;
+    }
+}

@@ -12,9 +12,17 @@ header {
 }
 
 .main-nav {
+    padding: 0 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
-    min-width: 100%;
+    min-height: 60px;
+    max-height: 80px;
+}
+
+.main-nav {
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        
+    }
+    
 }

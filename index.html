@@ -18,10 +18,15 @@
 <header> 
 <div>
 <nav class="container main-nav">
-    <a href="./index.html" class="logo web">
+    <div class="logo">
+        <a href="./index.html" class="web"><span>Web</span></a>
+        <a href="./index.html" class="studio"><span>Studio</span></a> 
+    </div>
+
+    <!--<a href="./index.html" class="logo web">
         <span>Web</span>
         <span class="logo studio">Studio</span>
-    </a>
+    </a>-->
 
     <button type="button" 
         class="menu-button" 
@@ -66,7 +71,7 @@
 
 <main>
 <!--Герой-->
-<section class="hero">
+<section class="hero container">
     <div class="hero-container--container">
         <h1 class="hero-title">ЭФФЕКТИВНОЕ РЕШЕНИЕ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button class="button-hero" data-modal-open>Заказать услугу</button>
@@ -181,22 +186,37 @@
     <ul class="work-list list">
         <li class="item">
             <div class="product-thumb">
-            <img srcset="./images/work1 1x,./images/work1 @2x 2x"
-                src="./images/work1.jpg" alt="Десктопные приложения" width="370" height="294">
+            <!--<img srcset="./images/work1 1x,./images/work1-740 2x"
+                src="./images/work1.jpg" alt="Десктопные приложения" width="370"/>-->
+                <picture>
+                    <source srcset="./images/work1.jpg 1x, ./images/work1-740.jpg 2x" 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <img src="./images/work1.jpg" alt="laptop">
+                </picture>
                 <h3 class="title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </div>
         </li>
         <li class="item">
             <div class="product-thumb">
-            <img srcset="./images/work2 1x,./images/work2 @2x 2x"
-                src="./images/work2.jpg" alt="Мобильные приложения" width="370" height="294">
+            <!--<img srcset="./images/work2 1x,./images/work2-740 2x"
+                src="./images/work2.jpg" alt="Мобильные приложения" width="370"/>-->
+                <picture>
+                    <source srcset="./images/work2.jpg 1x, ./images/work2-740.jpg 2x" 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <img src="./images/work2.jpg" alt="mobile">
+                </picture>
                 <h3 class="title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </div>
         </li>
         <li class="item">
             <div class="product-thumb">
-            <img srcset="./images/work3 1x,./images/work3 @2x 2x"
-                src="./images/work3.jpg" alt="Дизайнерские решения" width="370" height="294">
+            <!--<img srcset="./images/work3 1x,./images/work3-740 2x"
+                src="./images/work3.jpg" alt="Дизайнерские решения" width="370"/>-->
+                <picture>
+                    <source srcset="./images/work3.jpg 1x, ./images/work3-740.jpg 2x" 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <img src="./images/work3.jpg" alt="desktop">
+                </picture>
                 <h3 class="title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </div>
         </li>
@@ -455,18 +475,16 @@
 </main>
 
 <footer class="footer">
-<div class="footer-container">
     <div class="content-footer">
         <div class="address-list">
-            <a href="./index.html" class="logo web">
-                <span>Web</span>
-                <span class="logo studiof">Studio</span>
-            </a>
-        </div>
-
-            <address class="footer-address">
-                <ul class="location-list list">
-                    <li class="location location-item">г. Киев, пр-т Леси Украинки, 26</li>
+            <div class="logo">
+                <a href="./index.html" class="web"><span>Web</span></a>
+                <a href="./index.html" class="studiof"><span>Studio</span></a>
+            </div>
+        
+        <address class="footer-address">
+            <ul class="location-list list">
+                    <li class="location">г. Киев, пр-т Леси Украинки, 26</li>
                     <li class="location-item">
                         <a href="mailto:info@example.com" class="link">info@example.com</a>
                     </li>
@@ -474,12 +492,11 @@
                         <a href="tell:+380991111111" class="link">+38 099 111 11 11</a>
                     </li>
                 </ul>
-            </address>
+        </address>
+        </div>
 
-    </div>
-
-    <div class="join container">
-        <b>Присоединяйтесь</b>
+        <div class="join-container">
+            <b>Присоединяйтесь</b>
             <ul class="social-net-footer list">
                 <li class="social-item">
                     <a href="" class="link">
@@ -510,21 +527,20 @@
                     </a>
                 </li>  
             </ul>
-    </div>
+        </div>
 
-    <div class="sign container">
+        <div class="sign-container">
         <b>Подпишитесь на рассылку</b>
-            <div class="email-forma">
-            <input class="subscribe-input" type="email" name="mail" placeholder="E-mail">
-                <button class="email-send link">Подписаться
-                    <svg class="icon">
-                        <use href="./images/symbol-defs1.svg#icon-icon-send"></use> 
-                    </svg>
-                </button>
-            </div>
+        <div class="email-forma">
+        <input class="subscribe-input" type="email" name="mail" placeholder="E-mail">
+            <a class="email-send link">Подписаться
+                <svg class="icon">
+                    <use href="./images/symbol-defs1.svg#icon-icon-send"></use> 
+                </svg>
+            </a>
+        </div>
+        </div>
     </div>
-</div>
-
 </footer>
 
 <script src="./js/modal.js"></script>

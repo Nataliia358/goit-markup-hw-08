@@ -1,9 +1,13 @@
-.flex-container {
-    
-    @media screen and (min-width: 768px) {
+
+ @media screen and (min-width: 768px) {
+    .flex-container {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.flex-container .item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .flex-container .item {
@@ -14,6 +18,7 @@
     transition: box-shadow $timing-animation;
 }
 
+/*
 .flex-container .item {
     @media screen and (max-width: 1199px) and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
@@ -22,19 +27,19 @@
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 2 * 30px));
     }
-}
+}*/
 
-.flex-container .item {
-    &:not(:nth-child(2n)) {
-        @media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .flex-container .item {
+        &:not(:nth-child(2n)) {
             margin-right: 30px;
         }
     }
 }
 
-.flex-container .item {
-    &:not(:nth-child(3n)) {
-        @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    .flex-container .item {
+        &:not(:nth-child(3n)) {
             margin-right: 30px;
         }
     }

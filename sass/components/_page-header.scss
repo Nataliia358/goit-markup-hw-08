@@ -9,15 +9,18 @@ header {
     top: 0;
     border-bottom: 1px solid #ececec;
     background-color: $secondary-text-color;
-    
-    @media screen and (max-width: 767px) {
+     
+}
+
+@media screen and (max-width: 767px) {
+    header {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         min-height: 80px;
     }
-     
+
 }
 
 .main-nav {

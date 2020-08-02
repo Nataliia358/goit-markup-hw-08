@@ -8,6 +8,9 @@
 }
 
 .button-list {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
     @media screen and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
@@ -45,7 +48,7 @@
     background-color: #f5f4fa ;
     font-family: inherit;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
